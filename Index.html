@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Console</title>
+    </head>
+    <script>
+        name=["Soham","Mama","Papa"];
+        img=["son.jpeg","mother.jpeg","father.png"];
+        x=0;
+    function next(){
+        if(x==3){
+            x=0;
+        }
+        else{
+    document.getElementById("nam").innerHTML=name[x];
+    document.getElementById("im").src=img[x];
+    x=x+1;
+        }
+    }
+    </script>
+    <body>
+        <center>
+            <h1>My family Book</h1>
+            <img id="im">
+            <h3 id="nam"></h3>
+            <button onclick="next()">Next</button>
+        </center>
+    </body>
+</html>
